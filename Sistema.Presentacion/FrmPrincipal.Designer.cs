@@ -31,6 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.expedientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ahorrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.certificadosAPlazoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.creditosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.accionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.toolBarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusBarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,11 +48,7 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.expedientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ahorrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.certificadosAPlazoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.creditosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.accionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -61,12 +62,43 @@
             this.creditosToolStripMenuItem,
             this.accionesToolStripMenuItem,
             this.viewMenu,
-            this.helpMenu});
+            this.helpMenu,
+            this.manteToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(632, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
+            // 
+            // expedientesToolStripMenuItem
+            // 
+            this.expedientesToolStripMenuItem.Name = "expedientesToolStripMenuItem";
+            this.expedientesToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
+            this.expedientesToolStripMenuItem.Text = "Expedientes";
+            // 
+            // ahorrosToolStripMenuItem
+            // 
+            this.ahorrosToolStripMenuItem.Name = "ahorrosToolStripMenuItem";
+            this.ahorrosToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.ahorrosToolStripMenuItem.Text = "Ahorros";
+            // 
+            // certificadosAPlazoToolStripMenuItem
+            // 
+            this.certificadosAPlazoToolStripMenuItem.Name = "certificadosAPlazoToolStripMenuItem";
+            this.certificadosAPlazoToolStripMenuItem.Size = new System.Drawing.Size(122, 20);
+            this.certificadosAPlazoToolStripMenuItem.Text = "Certificados a plazo";
+            // 
+            // creditosToolStripMenuItem
+            // 
+            this.creditosToolStripMenuItem.Name = "creditosToolStripMenuItem";
+            this.creditosToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
+            this.creditosToolStripMenuItem.Text = "Creditos";
+            // 
+            // accionesToolStripMenuItem
+            // 
+            this.accionesToolStripMenuItem.Name = "accionesToolStripMenuItem";
+            this.accionesToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.accionesToolStripMenuItem.Text = "Acciones";
             // 
             // viewMenu
             // 
@@ -113,7 +145,7 @@
             // 
             this.contentsToolStripMenuItem.Name = "contentsToolStripMenuItem";
             this.contentsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F1)));
-            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.contentsToolStripMenuItem.Text = "&Contenido";
             // 
             // indexToolStripMenuItem
@@ -121,7 +153,7 @@
             this.indexToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("indexToolStripMenuItem.Image")));
             this.indexToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
             this.indexToolStripMenuItem.Name = "indexToolStripMenuItem";
-            this.indexToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.indexToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.indexToolStripMenuItem.Text = "&Índice";
             // 
             // searchToolStripMenuItem
@@ -129,18 +161,18 @@
             this.searchToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("searchToolStripMenuItem.Image")));
             this.searchToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.searchToolStripMenuItem.Text = "&Buscar";
             // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(173, 6);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.aboutToolStripMenuItem.Text = "&Acerca de... ...";
             // 
             // statusStrip
@@ -159,35 +191,11 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel.Text = "Estado";
             // 
-            // expedientesToolStripMenuItem
+            // manteToolStripMenuItem
             // 
-            this.expedientesToolStripMenuItem.Name = "expedientesToolStripMenuItem";
-            this.expedientesToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
-            this.expedientesToolStripMenuItem.Text = "Expedientes";
-            // 
-            // ahorrosToolStripMenuItem
-            // 
-            this.ahorrosToolStripMenuItem.Name = "ahorrosToolStripMenuItem";
-            this.ahorrosToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.ahorrosToolStripMenuItem.Text = "Ahorros";
-            // 
-            // certificadosAPlazoToolStripMenuItem
-            // 
-            this.certificadosAPlazoToolStripMenuItem.Name = "certificadosAPlazoToolStripMenuItem";
-            this.certificadosAPlazoToolStripMenuItem.Size = new System.Drawing.Size(122, 20);
-            this.certificadosAPlazoToolStripMenuItem.Text = "Certificados a plazo";
-            // 
-            // creditosToolStripMenuItem
-            // 
-            this.creditosToolStripMenuItem.Name = "creditosToolStripMenuItem";
-            this.creditosToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
-            this.creditosToolStripMenuItem.Text = "Creditos";
-            // 
-            // accionesToolStripMenuItem
-            // 
-            this.accionesToolStripMenuItem.Name = "accionesToolStripMenuItem";
-            this.accionesToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
-            this.accionesToolStripMenuItem.Text = "Acciones";
+            this.manteToolStripMenuItem.Name = "manteToolStripMenuItem";
+            this.manteToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.manteToolStripMenuItem.Text = "mante";
             // 
             // FrmPrincipal
             // 
@@ -230,6 +238,7 @@
         private System.Windows.Forms.ToolStripMenuItem certificadosAPlazoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem creditosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem accionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem manteToolStripMenuItem;
     }
 }
 
