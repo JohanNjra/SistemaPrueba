@@ -108,5 +108,10 @@ namespace Sistema.Presentacion
         {
 
         }
+
+        private void manteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

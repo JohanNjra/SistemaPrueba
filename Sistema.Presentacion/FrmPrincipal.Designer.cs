@@ -45,10 +45,10 @@
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.manteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -175,6 +175,13 @@
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.aboutToolStripMenuItem.Text = "&Acerca de... ...";
             // 
+            // manteToolStripMenuItem
+            // 
+            this.manteToolStripMenuItem.Name = "manteToolStripMenuItem";
+            this.manteToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
+            this.manteToolStripMenuItem.Text = "Mantenimiento";
+            this.manteToolStripMenuItem.Click += new System.EventHandler(this.manteToolStripMenuItem_Click);
+            // 
             // statusStrip
             // 
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -190,12 +197,6 @@
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
             this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel.Text = "Estado";
-            // 
-            // manteToolStripMenuItem
-            // 
-            this.manteToolStripMenuItem.Name = "manteToolStripMenuItem";
-            this.manteToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.manteToolStripMenuItem.Text = "mante";
             // 
             // FrmPrincipal
             // 
