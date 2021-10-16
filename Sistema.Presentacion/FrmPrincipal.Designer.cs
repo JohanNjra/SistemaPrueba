@@ -60,10 +60,10 @@
             this.ahorrosToolStripMenuItem,
             this.certificadosAPlazoToolStripMenuItem,
             this.creditosToolStripMenuItem,
-            this.manteToolStripMenuItem,
             this.accionesToolStripMenuItem,
             this.viewMenu,
-            this.helpMenu});
+            this.helpMenu,
+            this.manteToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(632, 24);
